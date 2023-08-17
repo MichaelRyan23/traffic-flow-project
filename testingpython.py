@@ -19,7 +19,7 @@ pygame.display.set_caption("Traffic Simulation")
 
 CLOCK = pygame.time.Clock()
 
-LANE_SIZE = 100
+CAR_SIZE = 100
 
 class Car:
     def __init__(self, position, direction):
@@ -45,7 +45,7 @@ class Car:
             print (' not moving')
 
     def draw(self):
-        pygame.draw.rect(screen, self.color, (self.x, self.y, LANE_SIZE, LANE_SIZE))
+        pygame.draw.rect(screen, self.color, (self.x, self.y, CAR_SIZE, CAR_SIZE))
         #pygame.draw.rect(screen, (0, 255, 0), (10, 10, 50, 75))
 
 def draw_road():
