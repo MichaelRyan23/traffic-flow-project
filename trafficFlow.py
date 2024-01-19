@@ -47,18 +47,23 @@ class Car:
         return False
 
     def move(self):
-        # if self.moving and self.index > 0:
-        #     self.index -= 1
+        ## Maybe???? if self.moving and self.index > 0:
+        ##     self.index -= 1
+            
         if not self.stop_buffer():
 
             if self.direction == "DOWN":
                 self.y += 1
+                #self.moving = true
             elif self.direction == "UP":
                 self.y -= 1
+                #self.moving = true
             elif self.direction == "RIGHT":
                 self.x += 1
+                #self.moving = true
             elif self.direction == "LEFT":
                 self.x -= 1
+                #self.moving = true
             else:
                 print (' not moving')
 
